@@ -56,9 +56,10 @@ ul {
   padding: 1rem;
   width: 25%;
   text-align: center;
+  font-weight: bold;
   color: whitesmoke;
   background-color: var(--primary);
-  color: var(--secondary);
+  color: var(--accent-1);
 }
 
 .navigation a:hover {
