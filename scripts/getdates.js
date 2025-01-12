@@ -8,7 +8,6 @@ const getLastUpdate = () => {
   return date.toLocaleString();
 }
 
-window.onload = () => {
-  document.getElementById('current-year').innerHTML = getYear();
-  document.getElementById('last-modified').innerHTML = `Last Modification: ${getLastUpdate()}`
-}
+document.getElementById('current-year').innerHTML = getYear();
+document.getElementById('last-modified').innerHTML = `Last Modification: ${getLastUpdate()}`
+
