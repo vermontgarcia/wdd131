@@ -4,7 +4,7 @@ const getYear = () => {
 }
 
 const getLastUpdate = () => {
-  const date = new Date()
+  const date = document.lastModified
   return date.toLocaleString();
 }
 
