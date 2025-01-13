@@ -31,6 +31,12 @@ ul {
   list-style: none;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .header {
   background-color: var(--accent-1);
   display: flex;
@@ -74,6 +80,7 @@ ul {
   width: 80%;
   max-width: 1000px;
   margin: auto;
+  flex-grow: 1;
 }
 
 .card {
