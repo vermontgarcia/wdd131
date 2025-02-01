@@ -1,0 +1,25 @@
+@media screen and (min-width: 500px) {
+  .pictures-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .pictures-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .navigation #menu-large{
+    display: flex;
+    flex-grow: 1;
+  }
+  
+  .header-title {
+    /* flex-grow: 1; */
+    width: 25%;
+  }
+
+  #menu {
+		display: none;
+	}
+}
