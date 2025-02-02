@@ -41,6 +41,27 @@ const templesList = [
   // },
 ];
 
+      // <figure>
+      //   <img src="https://www.churchofjesuschrist.org/imgs/17e2c70d687fffedfe115197e57fa8f5d1d369bb/full/640%2C/0/default" alt="Rome Italy Temple">
+      //   <figcaption>Rome Italy Temple</figcaption>
+      // </figure>
+      // <figure>
+      //   <img src="https://www.churchofjesuschrist.org/imgs/f46bd40ab80c3371019f5f4ecc78680b4660e1c2/full/640%2C/0/default" alt="Helsinki Finland Temple">
+      //   <figcaption>Helsinki Finland Temple</figcaption>
+      // </figure>
+      // <figure>
+      //   <img src="https://www.churchofjesuschrist.org/imgs/5ec026c4efeaaa19a98e40f0f1b4c6069ae63517/full/640%2C/0/default" alt="Paris France Temple">
+      //   <figcaption>Paris France Temple</figcaption>
+      // </figure>
+      // <figure>
+      //   <img src="https://www.churchofjesuschrist.org/imgs/17e2c70d687fffedfe115197e57fa8f5d1d369bb/full/640%2C/0/default" alt="Rome Italy Temple">
+      //   <figcaption>Rome Italy Temple</figcaption>
+      // </figure>
+      // <figure>
+      //   <img src="https://www.churchofjesuschrist.org/imgs/8992d85669af96dd61ecf98e249a7da21bd7f7b0/full/640%2C/0/default" alt="Orlando Florida Temple">
+      //   <figcaption>Orlando Florida Temple</figcaption>
+      // </figure>
+
 const getYear = () => {
   const date = new Date()
   return date.getFullYear();
@@ -54,18 +75,18 @@ const getLastUpdate = () => {
 document.getElementById('current-year').innerHTML = getYear();
 document.getElementById('last-modified').innerHTML = `Last Modification: ${getLastUpdate()}`;
 
-const main = document.querySelector('main');
-const picturesContainer = document.createElement('div');
-picturesContainer.setAttribute('class', 'pictures-container')
-main.appendChild(picturesContainer);
+// const main = document.querySelector('main');
+// const picturesContainer = document.createElement('div');
+// picturesContainer.setAttribute('class', 'pictures-container')
+// main.appendChild(picturesContainer);
 
-templesList.forEach((temple)=>{
-  const figure = document.createElement('figure');
-  const figcaption = document.createElement('figcaption');
-  figcaption.textContent = temple.name;
-  const img = document.createElement('img');
-  img.setAttribute('src', temple.src);
-  img.setAttribute('alt', temple.name);
-  figure.append(img, figcaption);
-  picturesContainer.appendChild(figure);
-});
+// templesList.forEach((temple)=>{
+//   const figure = document.createElement('figure');
+//   const figcaption = document.createElement('figcaption');
+//   figcaption.textContent = temple.name;
+//   const img = document.createElement('img');
+//   img.setAttribute('src', temple.src);
+//   img.setAttribute('alt', temple.name);
+//   figure.append(img, figcaption);
+//   picturesContainer.appendChild(figure);
+// });
