@@ -1,0 +1,10 @@
+@media screen and (min-width: 500px) {
+  .card {
+    border: solid 1px transparent;
+    /* border-radius: 5px; */
+    box-shadow: 0 4px 8px 0;
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+

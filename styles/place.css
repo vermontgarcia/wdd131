@@ -1,0 +1,45 @@
+/*  */
+:root {
+  --primary: #3E363F;
+  --secondary: #E6AF2E;
+  --accent-1: #B1EDE8;
+  --accent-2: #307473;
+  --accent-3: #2274A5;
+  --full-width: 100vw;
+  /* colors for svg */
+  --svg-primary: invert(19%) sepia(2%) saturate(3956%) hue-rotate(246deg) brightness(92%) contrast(85%);
+  --svg-accent-2: invert(36%) sepia(6%) saturate(3647%) hue-rotate(130deg) brightness(101%) contrast(80%);
+}
+
+/* Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Element Selectors */
+
+body {
+  font-family: "Manjari", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Id Selectors */
+
+#copyright-symbol {
+  font-size: 1.4rem;
+}
+
+/* Class Selectors */
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card {
+  margin: 1rem;
+}

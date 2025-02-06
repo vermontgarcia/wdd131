@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD | Country Page | Minsk</title>
+  <meta name="author" content="Vermont Garcia">
+  <meta name="description" content="Place information page design - WDD131">
+  <link rel="stylesheet" href="styles/place.css">
+  <link rel="stylesheet" href="styles/place-large.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Manjari:wght@400;700&display=swap" rel="stylesheet">
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Minsk</h1>
+  </header>
+  <main>
+    <section class="hero">
+      <picture>
+        <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+        <source media="(min-width: 500px)" srcset="images/hero-medium.webp">
+        <img src="images/hero-small.webp" alt="City of Minks" width="500" height="313" >
+      </picture>
+    </section>
+    <section class="card">
+      Data
+    </section>
+    <section class="card">
+      Weather
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="copyright"><span id="copyright-symbol">©</span> <span id="current-year"></span> • Vermont Garcia • Provo Utah</p>
+    <p id="last-modified"></p>
+  </footer>
+</body>
+</html>
