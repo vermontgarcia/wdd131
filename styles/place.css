@@ -76,6 +76,7 @@ main {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
+
 }
 
 .card li strong {
@@ -83,6 +84,52 @@ main {
   margin-right: 5px;
 }
 
+
+
 /* .card-body strong::after {
   content: " ";
 } */
+
+.skeleton {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 80%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+
+.skeleton-text {
+  height: 0.7rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.skeleton-1 {
+  width: 4rem;
+}
+
+.skeleton-2 {
+  width: 7rem;
+}
+
+.skeleton-3 {
+  width: 2rem;
+}
+
+.skeleton-text__body {
+  width: 75%;
+}
+
+.skeleton-footer {
+  width: 100%;
+}
+
+#weather-title {
+  display: flex;
+  flex-direction: column;
+}

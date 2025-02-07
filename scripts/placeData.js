@@ -33,6 +33,41 @@ export const placeData = [
   },
 ];
 
+export const weatherData = [
+  {
+    name: "Temperature",
+    value: ``,
+  },
+  {
+    name: "Humidity",
+    value: ``,
+  },
+  {
+    name: "Conditions",
+    value: ``,
+  },
+  {
+    name: "Visibility",
+    value: ``,
+  },
+  {
+    name: "Wind Velocity",
+    value: ``,
+  },
+  {
+    name: "Wind Direction",
+    value: ``,
+  },
+  {
+    name: "Wind Chill",
+    value: ``,
+  },
+  // {
+  //   name: "Local Time",
+  //   value: ``,
+  // },
+];
+
 export const fetchWeather = async () => {
   try {
     const response = await fetch(
@@ -43,7 +78,7 @@ export const fetchWeather = async () => {
     }
     const data = await response.json();
 
-    const weatherData = [
+    const newWeatherData = [
       {
         name: "Temperature",
         value: `${data.current.temp_c} °C`,
@@ -77,7 +112,9 @@ export const fetchWeather = async () => {
       //   value: `${data.location.localtime}`,
       // },
     ];
-    return weatherData;
+    const weatherIconURL = data.current.condition.icon;
+
+    return { newWeatherData, weatherIconURL };
   } catch (error) {
     console.error("Error:", error);
   }

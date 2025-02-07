@@ -24,6 +24,25 @@
     align-self: end;
     justify-self: end;
   }
+
+  .weather-icon::after {
+    content: '⛅';
+  }
+
+  #weather-title {
+    display: block;
+  }
+
+  #weather-title img {
+    width: 3.5rem;
+    height: 3.5rem;
+    transform: translateY(-1.1rem);
+    position: absolute;
+  }
+
+  .shiffted-left {
+    transform: translateX(-1.1rem);
+  }
   
   .card {
     border: solid 1px transparent;
