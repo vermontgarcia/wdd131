@@ -29,6 +29,10 @@
     content: '⛅';
   }
 
+  .weather-icon-hide {
+    display: none;
+  }
+
   #weather-title {
     display: block;
   }

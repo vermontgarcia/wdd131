@@ -127,6 +127,7 @@ const fetchWeather = async () => {
 const dataContainer = document.getElementById("data-list");
 const weatherContainer = document.getElementById("weather-list");
 const weatherTitle = document.getElementById("weather-title");
+const weatherIcon = document.getElementById("weather-icon");
 
 // Dynamic build of Place Data information
 placeData.forEach((row) => {
@@ -174,9 +175,8 @@ const updateWeather = async () => {
   });
   weatherTitle.classList.toggle("weather-icon");
   weatherTitle.classList.toggle("shiffted-left");
-  const icon = document.createElement("img");
-  icon.setAttribute("src", data.weatherIconURL);
-  weatherTitle.appendChild(icon);
+  weatherIcon.classList.toggle("weather-icon-hide");
+  weatherIcon.setAttribute("src", data.weatherIconURL);
 };
 
 updateWeather();
