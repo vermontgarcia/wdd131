@@ -12,7 +12,7 @@
   /* colors for svg */
   --svg-primary: invert(19%) sepia(2%) saturate(3956%) hue-rotate(246deg) brightness(92%) contrast(85%);
   --svg-accent-2: invert(36%) sepia(6%) saturate(3647%) hue-rotate(130deg) brightness(101%) contrast(80%);
-  --background-belarus: radial-gradient(circle, rgba(255, 255, 255, 0.6), transparent), linear-gradient(180deg, var(--flag-red) 80%, var(--flag-green) 80%);
+  --background-belarus: radial-gradient(circle, rgba(255, 255, 255, 0.6), transparent), linear-gradient(180deg, var(--flag-red) 65% 80%, var(--flag-green) 80% 90%, var(--flag-red) 90% );
 }
 
 /* Universal Selector */
