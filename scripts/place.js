@@ -173,10 +173,11 @@ const updateWeather = async () => {
     li.appendChild(span);
     weatherContainer.append(li);
   });
+  // Toggle weather SVG and after pseudo element after fetching weather data
+  weatherIcon.setAttribute("src", data.weatherIconURL);
   weatherTitle.classList.toggle("weather-icon");
   weatherTitle.classList.toggle("shiffted-left");
   weatherIcon.classList.toggle("weather-icon-hide");
-  weatherIcon.setAttribute("src", data.weatherIconURL);
 };
 
 updateWeather();
