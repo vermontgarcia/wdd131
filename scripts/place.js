@@ -68,10 +68,29 @@ const weatherData = [
     name: "Wind Chill",
     value: ``,
   },
+  {
+    name: "Wind Chill (API)",
+    value: ``,
+  },
+  {
+    name: "Wind Chill (Calc)",
+    value: ``,
+  },
 ];
+
+// Windchill calculation function
+const calculateWindChill = (T, V) =>
+  13.12 + 0.6215 * T - 11.37 * V ** 0.16 + 0.3965 * T * V ** 0.16;
+
+// Time
+const getDateAndTime = () => {
+  const timeDate = new Date(Date.now());
+  return timeDate.toLocaleTimeString("en-US", { timeZone: "Etc/GMT-3" });
+};
 
 // Variable used to assign different classes on creation of skeleton for weather information
 let count = 1;
+let calculatedWindchillText = "";
 
 // Weather API integration
 const fetchWeather = async () => {
@@ -82,40 +101,64 @@ const fetchWeather = async () => {
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }
-    const data = await response.json();
+
+    // Destructuring and renaming properties form API response
+    const {
+      current: {
+        temp_c: temperature,
+        humidity,
+        vis_km: visibility,
+        wind_kph: windSpeed,
+        wind_dir: windDirection,
+        windchill_c: windchill,
+        condition: { text: conditionText, icon: weatherIconURL },
+      },
+    } = await response.json();
+
+    // Windchill calculation based on requirements
+    if (temperature <= 10 && windSpeed > 4.8) {
+      const windchillValue = calculateWindChill(temperature, windSpeed);
+      calculatedWindchillText = `${windchillValue.toFixed(1)} °C`;
+    } else {
+      calculatedWindchillText = "N/A";
+    }
 
     const newWeatherData = [
       {
         name: "Temperature",
-        value: `${data.current.temp_c} °C`,
+        value: `${temperature} °C`,
       },
       {
         name: "Humidity",
-        value: `${data.current.humidity} %`,
+        value: `${humidity} %`,
       },
       {
         name: "Conditions",
-        value: `${data.current.condition.text}`,
+        value: `${conditionText}`,
       },
       {
         name: "Visibility",
-        value: `${data.current.vis_km} km`,
+        value: `${visibility} km`,
       },
       {
         name: "Wind Velocity",
-        value: `${data.current.wind_kph} km/h`,
+        value: `${windSpeed} km/h`,
       },
       {
         name: "Wind Direction",
-        value: `${data.current.wind_dir}`,
+        value: `${windDirection}`,
       },
       {
-        name: "Wind Chill",
-        value: `${data.current.windchill_c} °C`,
+        name: "Wind Chill (API)",
+        value: `${windchill} °C`,
+      },
+      {
+        name: "Wind Chill (Calc)",
+        value: `${calculatedWindchillText}`,
       },
     ];
 
-    const weatherIconURL = data.current.condition.icon;
+    // const weatherIconURL = data.current.condition.icon;
 
     return { newWeatherData, weatherIconURL };
   } catch (error) {
@@ -181,3 +224,11 @@ const updateWeather = async () => {
 };
 
 updateWeather();
+
+// Show Local Date and Time for Misnk
+setInterval(() => {
+  const localTime = document.querySelector("#data-list > li:last-child > span");
+  if (localTime) {
+    localTime.innerText = getDateAndTime().toString();
+  }
+}, 1000);
