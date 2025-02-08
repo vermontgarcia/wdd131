@@ -154,8 +154,6 @@ const fetchWeather = async () => {
       },
     ];
 
-    // const weatherIconURL = data.current.condition.icon;
-
     return { newWeatherData, weatherIconURL };
   } catch (error) {
     console.error("Error:", error);
