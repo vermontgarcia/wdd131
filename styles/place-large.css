@@ -52,7 +52,7 @@
     border: solid 1px transparent;
     box-shadow: 0 4px 8px 0;
     margin: 2rem;
-    min-width: 60%;
+    width: 21rem;
   }
 
   .card-header {
