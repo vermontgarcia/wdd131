@@ -65,10 +65,6 @@ const weatherData = [
     value: ``,
   },
   {
-    name: "Wind Chill",
-    value: ``,
-  },
-  {
     name: "Wind Chill (API)",
     value: ``,
   },
@@ -223,7 +219,10 @@ const updateWeather = async () => {
   weatherIcon.classList.toggle("weather-icon-hide");
 };
 
-updateWeather();
+// Execute this to update weather information after 5 seconds
+setTimeout(() => {
+  updateWeather();
+}, 5000);
 
 // Show Local Date and Time for Misnk
 setInterval(() => {
