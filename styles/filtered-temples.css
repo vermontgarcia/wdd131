@@ -87,35 +87,34 @@ h2 {
   grid-template-columns: 1fr;
   max-width: 1200px;
   margin: 0 auto;
-  
-  div {
-      padding: 1rem;
-      background-color: var(--accent-2);
-      margin: 0.5rem;
-      border-radius: 5px;
-    }
-  
-  img {
-    margin-top: 0.5rem;
-    width: 100%;
-    height: auto;
-    box-shadow: var(--box-shadow);
-  }
+}
 
-  h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
+.pictures-container div {
+  padding: 1rem;
+  background-color: var(--accent-2);
+  margin: 0.5rem;
+  border-radius: 5px;
+}
 
-  p {
+.pictures-container img {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: auto;
+  box-shadow: var(--box-shadow);
+}
 
-    text-align: center;
-    color: var(--primary);
+.pictures-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
 
-    span {
-      color: var(--accent-3);
-    }
-  }
+.pictures-container p {
+  text-align: center;
+  color: var(--primary);
+}
+
+.pictures-container p span {
+  color: var(--accent-3);
 }
 
 section {
