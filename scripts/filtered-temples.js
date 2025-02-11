@@ -155,7 +155,7 @@ const renderTemplesList = (templesList) => {
     const img = document.createElement("img");
     img.setAttribute("src", temple.imageUrl);
     img.setAttribute("loading", "lazy");
-    img.setAttribute("alt", temple.name);
+    img.setAttribute("alt", temple.templeName);
 
     const card = document.createElement("div");
     card.append(name, location, dedicated, size, img);
