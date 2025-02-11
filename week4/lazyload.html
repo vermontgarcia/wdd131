@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131 - Lazy Loading Example</title>
+    <meta name="author" content="Vermont Garcia">
+    <meta name="description" content="A lazy loading images example WDD131">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="scripts/lazyload.js" defer></script>
+  </head>
+<body>
+  <main>
+    <h1>Lazy Loading</h1>
+    <div>
+      <img src="//picsum.photos/400/600" alt="image 1" width="400" height="600" loading="lazy">
+      <img src="//picsum.photos/400/600" alt="image 2" width="400" height="800" loading="lazy">
+      <img src="//picsum.photos/400/600" alt="image 3" width="400" height="750" loading="lazy">
+      <img src="//picsum.photos/400/600" alt="image 4" width="400" height="600" loading="lazy">
+      <img src="//picsum.photos/400/600" alt="image 5" width="400" height="700" loading="lazy">
+      <img src="//picsum.photos/400/600" alt="image 6" width="400" height="850" loading="lazy">
+    </div>
+  </main>
+  <footer class="footer">
+    <div>
+      <p class="copyright"><span id="copyright-symbol">©</span> <span id="current-year"></span> • Vermont Garcia • Provo Utah</p>
+      <p id="last-modified"></p>
+    </div>
+  </footer>
+</body>
+</html>

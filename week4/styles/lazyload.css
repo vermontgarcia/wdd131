@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  margin: 1rem 0;
+  width: 90%;
+  background-color: black;
+  animation: fade-image 15s;
+}
+
+@keyframes fade-image {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+  
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
