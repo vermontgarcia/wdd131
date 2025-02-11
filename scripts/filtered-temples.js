@@ -1,3 +1,4 @@
+// Temples Full List
 const templesList = [
   {
     templeName: "Aba Nigeria",
@@ -124,13 +125,12 @@ const templesList = [
 // Pictures Selector
 const picturesContainer = document.getElementById("pictures-container");
 picturesContainer.setAttribute("class", "pictures-container");
+
 // Page Title Selector
 const pageTitle = document.getElementById("page-title");
 pageTitle.textContent = `Home (${templesList.length})`;
 
-// // Variable to render current selected list of temples (Initial home all temples)
-// let currentTemplesList = [...templesList];
-
+// Render temples list function
 const renderTemplesList = (templesList) => {
   // Create Row Helper Function
   const createRow = (name, value) => {
@@ -164,6 +164,7 @@ const renderTemplesList = (templesList) => {
   });
 };
 
+// Initial Temple List Rendering
 renderTemplesList(templesList);
 
 // Navigation Buttons Selectors
@@ -258,8 +259,8 @@ hamButton.addEventListener("click", () => {
 });
 
 const toggleMobileMenu = () => {
+  // If small screen with hamburger menu toggle menu. Large screen ignore
   const screenWidth = document.documentElement.clientWidth;
-  console.log(screenWidth);
   if (screenWidth < 800) {
     hamButton.classList.toggle("show");
     hamMenuButton.classList.toggle("show");
