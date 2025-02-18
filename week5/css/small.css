@@ -118,7 +118,7 @@ main {
     margin: -1rem 2% 2rem;
     box-shadow: 1px 1px 4px #999;
 }
-.wf1 input:required:invalid {
+.wf1 input:required {
     border-right: solid 4px red;
 }
 .wf1 input:required:valid {
