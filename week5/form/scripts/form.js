@@ -25,3 +25,31 @@ const products = [
     averagerating: 5.0,
   },
 ];
+
+const titleCase = (str) => {
+  return str.toLowerCase().replace(/(?:^|\s)\w/g, (match) => {
+    return match.toUpperCase();
+  });
+};
+
+const selectProduct = document.getElementById("product");
+
+if (selectProduct) {
+  products.forEach((product) => {
+    const option = document.createElement("option");
+    option.setAttribute("value", product.id);
+    option.innerText = titleCase(product.name);
+    selectProduct.append(option);
+  });
+}
+
+const reviewLoaded = () => {
+  const reviewsCount = parseInt(localStorage.getItem("reviews")) || 0;
+  localStorage.setItem("reviews", reviewsCount + 1);
+};
+
+const documentName = document.title;
+
+if (documentName === "WDD | Thank You Page") {
+  reviewLoaded();
+}
