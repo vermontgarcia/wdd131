@@ -38,6 +38,7 @@ header, footer {
 main {
   display: grid;
   grid-template-columns: 1fr;
+  padding: 0 2rem;
 }
 
 /* Id Selectors */
@@ -46,7 +47,20 @@ main {
   font-size: 1.4rem;
 }
 
-/* Class Selectors */
+#thankyou-page {
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 550px;
+}
+
+#thankyou-page p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+#thankyou-page h2 {
+  font-size: 2rem;
+}
 
 /* Form Styling */
 
@@ -131,7 +145,6 @@ main {
 /* Rating Stars Styles */
 .review-form .stars {
   display: flex;
-  /* align-items: center; */
   width: 180px;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -139,8 +152,13 @@ main {
   position: relative;
 }
 
-.review-form .stars input {
-  display: none;
+.review-form input[type="radio"] {
+  appearance: none;
+  width: 12px;
+}
+
+.review-form input[type="radio"]:required {
+  border: 0;
 }
 
 .review-form .stars > label {
@@ -179,4 +197,4 @@ main {
   font-size: 36px;
   line-height: 21px;
   }
-}  
+}
