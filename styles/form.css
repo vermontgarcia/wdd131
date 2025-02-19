@@ -4,12 +4,13 @@
   --secondary: #E6AF2E;
   --accent-1: #B1EDE8;
   --accent-2: #307473;
-  --accent-3: #2274A5;
+  --accent-3: #014d79;
   --background: #DDDDDD;
   --form-labels: #34043A;
   --full-width: 100vw;
   --stars: rgb(255, 165, 0);
   --stars-hover: rgb(250, 133, 0);
+  --required-asterisc: #990000;
 }
 
 /* Universal Selector */
@@ -133,7 +134,7 @@ main {
 }
 
 .review-form .required {
-  color: red;
+  color: var(--required-asterisc);
   margin-left: 5px;
 }
 
