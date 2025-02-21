@@ -146,3 +146,79 @@ export const inputStartAttributes = [
     value: "1",
   },
 ];
+
+export const teamMembers = [
+  {
+    imgUrl: "https://example.com/images/team1.jpg",
+    name: "John Doe",
+    captions: "CEO & Founder",
+    more: "I’m proud to lead a team that brings cleanliness and comfort to so many people. Watching our clients’ satisfaction fuels my passion for this work.",
+  },
+  {
+    imgUrl: "https://example.com/images/team2.jpg",
+    name: "Jane Smith",
+    captions: "Lead Cleaner",
+    more: "Every day I get to make a difference in someone’s home. The smiles from our clients when they see the results keep me motivated and fulfilled.",
+  },
+  {
+    imgUrl: "https://example.com/images/team3.jpg",
+    name: "Mike Johnson",
+    captions: "Project Manager",
+    more: "I love organizing and overseeing the work that makes homes shine. It’s great to be part of a company that values attention to detail and customer satisfaction.",
+  },
+  {
+    imgUrl: "https://example.com/images/team4.jpg",
+    name: "Sarah Lee",
+    captions: "Marketing Director",
+    more: "I’m excited to spread the word about our fantastic team. Helping people discover the difference we make in their lives is incredibly rewarding.",
+  },
+  {
+    imgUrl: "https://example.com/images/team5.jpg",
+    name: "Chris Brown",
+    captions: "Senior Cleaner",
+    more: "It’s not just about cleaning—it’s about creating spaces where people can relax and thrive. Being part of a team that values this makes me proud every day.",
+  },
+];
+
+export const aboutUsSpeach = {
+  title: "About Us",
+  content: [
+    "At <string>Gili Clean</strong>, we believe that a clean environment is key to a happy, healthy life. Our company was founded with the simple yet powerful mission of providing top-notch cleaning services that not only transform homes and offices but also give our clients the gift of time. We understand that life is busy, and we’re here to ensure that cleaning doesn’t add to the stress—it’s our job to handle the mess, so you can focus on what matters most.",
+  ],
+};
+
+export const ourStorySpeach = {
+  title: "Our Story",
+  content: [
+    "Gili Clean was born out of a passion for cleanliness and a desire to help others live and work in spaces that foster well-being and productivity. What began as a small, family-run business has grown into a trusted name in the cleaning industry, known for our attention to detail and commitment to customer satisfaction.",
+    "From our humble beginnings, we quickly realized that providing top-tier cleaning solutions wasn’t just about scrubbing floors and dusting shelves. It was about offering our clients peace of mind, knowing they could rely on us to create spaces that are not only sparkling clean but also conducive to their personal and professional growth.",
+    "Every time we finish a cleaning, we know we’ve made a difference—and that keeps us motivated every day.",
+  ],
+};
+
+export const ourMissionSpeach = {
+  title: "About Us",
+  content: [
+    "At Gili Clean, our mission is simple: To make every home and office we clean a place where people can thrive. By providing top-quality cleaning services, we give our clients the time and space they need to focus on their personal goals, family, and work. We’re not just cleaning spaces; we’re creating environments where people can relax, feel inspired, and succeed.",
+  ],
+};
+
+export const ourValues = {
+  title: "Our Values",
+  content: [
+    "<strong>Customer Satisfaction:</strong>Our clients are at the heart of everything we do. We take pride in consistently exceeding expectations, and our goal is always to leave your space feeling fresh, clean, and rejuvenating.",
+    "<strong>Eco-Friendly Practices:</strong>We are committed to using eco-friendly products that are safe for both our clients and the environment. Clean spaces should be healthy spaces, and we do our part to ensure that cleaning doesn’t harm the planet.",
+    "<strong>Professionalism:</strong>Our team is composed of highly trained, trustworthy professionals who treat each home and office with the utmost respect. We value integrity, punctuality, and a job well done.",
+    "<strong>Passion for Cleanliness:</strong>We’re not just cleaning because it’s our job—we love what we do. Our passion for cleanliness and order drives us to give every job our best effort.",
+  ],
+};
+
+export const whyChooseUs = {
+  title: "Why Choose Gili Clean?",
+  content: [
+    "<strong>Experienced Team:</strong>Our team is made up of skilled professionals who take pride in their work. We’re not just cleaners; we’re perfectionists who care about the details.",
+    "<strong>Flexible Services:</strong>Whether you need a one-time deep cleaning or regular maintenance, we offer flexible cleaning solutions that fit your schedule and needs.",
+    "<strong>Customer-Centered Approach:</strong>Your satisfaction is our top priority. We listen to your needs and customize our services to ensure that your expectations are met—and exceeded.",
+    "<strong>Affordable & Transparent Pricing:</strong>We believe in honesty and transparency. Our pricing is straightforward, and there are no hidden fees. You get the best value for your investment.",
+  ],
+};
