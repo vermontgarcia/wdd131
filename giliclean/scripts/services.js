@@ -1,11 +1,11 @@
 import { services } from "./content.js";
 
-// DOM Selectors
+// DOM Selectors Home Page
 const servicesSection = document.getElementById("services");
 
 console.log(servicesSection);
 
-services.forEach(({ name, description }) => {
+services.slice(3).forEach(({ name, description }) => {
   // Create Services Cards and add them to the DOM
   const cardDiv = document.createElement("div");
   const cardH3 = document.createElement("h3");
