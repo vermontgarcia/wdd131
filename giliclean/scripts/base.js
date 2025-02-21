@@ -1,5 +1,6 @@
 import services from "./services.js";
 import reviews from "./reviews.js";
+import team from "./team.js";
 
 // Functions
 
