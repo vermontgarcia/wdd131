@@ -1,39 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --primary: #3E363F;
-  --secondary: #E6AF2E;
-  --accent-1: #B1EDE8;
-  --accent-2: #307473;
-  --accent-3: #2274A5;
-  --width: 100vw;
-  /* colors for svg */
-  --svg-primary: invert(19%) sepia(2%) saturate(3956%) hue-rotate(246deg) brightness(92%) contrast(85%);
-  --svg-accent-2: invert(36%) sepia(6%) saturate(3647%) hue-rotate(130deg) brightness(101%) contrast(80%);
-}
-
-body {
-  font-family: "Manjari", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-a {
-  text-decoration: none;
-}
+/* Header */
 
 .header-title {
   font-size: 2.5rem;
-  /* justify-content: flex-start;/ */
-  /* align-items: center; */
-  /* font-weight: bold; */
-  /* text-align: center;/// */
-  /* color: whitesmoke; */
-  /* color: var(--accent-1); */
   padding: 1rem;
   display: none;
 }
@@ -42,10 +10,7 @@ a {
   display: flex;
 }
 
-header, footer {
-  background-color: var(--primary);
-  color: var(--accent-1);
-}
+/* Navigation */
 
 .navigation {
   display: flex;
@@ -56,7 +21,7 @@ header, footer {
 }
 
 .navigation #menu-large a {
-  padding: 1rem;
+  padding: 0.5rem;
   font-size: 1.5rem;
   flex: 1 1 100%;
   text-align: center;
@@ -65,61 +30,21 @@ header, footer {
   height: 100%;
 }
 
+.navigation #menu-large{
+  display: none;
+}
+
+.navigation.show {
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Menu */
+
 #menu-large a:hover {
   background-color: var(--accent-1);
   color: var(--primary);
 }
-
-header {
-  display: flex;
-  flex-direction: row;
-}
-
-h1 {
-  text-align: center;
-  font-size: 1.5rem;
-}
-
-h2 {
-  text-align: center;
-  margin-top: 1rem;
-  font-size: 2rem;
-}
-
-.pictures-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.pictures-container img {
-  width: 100%;
-  height: auto;
-}
-
-.pictures-container figure {
-  padding: 1rem;
-}
-
-section {
-  padding: 1rem;
-  background-color: #fff;
-}
-
-.footer {
-  padding: 1rem;
-  text-align: center;
-}
-
-.copyright {
-  font-size: large;
-}
-
-#last-modified {
-  font-size: small;
-}
-
 
 #menu.show::before {
   content: "x";
@@ -128,12 +53,8 @@ section {
   padding-right: 1rem;
 }
 
-.navigation #menu-large{
-  display: none;
-}
-
 #menu {
-  width: 4rem;
+  width: 2rem;
 }
 
 #menu::before {
@@ -148,20 +69,18 @@ section {
 #ham-menu {
   font-size: 2.5rem;
   width: 4rem;
-  height: 100%;
+  height: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin-right: 1rem;
 }
 
 #ham-menu:hover {
   color: var(--primary);
   background-color: var(--accent-1);
-}
-
-.show {
-	display: flex;
+  cursor: pointer;
 }
 
 #menu-large.show {
@@ -170,11 +89,51 @@ section {
   width: 100%;
 }
 
-.navigation.show {
-  flex-direction: column;
+#ham-menu.show, #menu.show  {
   width: 100%;
 }
 
-#ham-menu.show, #menu.show  {
-  width: 100%;
+
+/*********************** Home Page ***********************/
+
+/* Hero */
+
+
+/* Main Section */
+
+
+/* Services Section */
+
+
+/* Reviews Section */
+
+
+/* Service Area Section */
+
+
+/* Join Our Team Section */
+
+
+/*********************** About Us Page ***********************/
+
+
+/*********************** Services Page ***********************/
+
+
+/*********************** Contact Page ***********************/
+
+
+/* Footer */
+
+.footer {
+  padding: 1rem;
+  text-align: center;
+}
+
+.copyright {
+  font-size: large;
+}
+
+#last-modified {
+  font-size: small;
 }
