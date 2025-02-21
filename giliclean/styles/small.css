@@ -67,7 +67,7 @@
 }
 
 #ham-menu {
-  font-size: 2.5rem;
+  font-size: var(--title);
   width: 4rem;
   height: 70%;
   display: flex;
@@ -125,7 +125,7 @@
 
 /* Footer */
 
-.footer {
+/* .footer {
   padding: 1rem;
   text-align: center;
 }
@@ -136,4 +136,4 @@
 
 #last-modified {
   font-size: small;
-}
+} */
