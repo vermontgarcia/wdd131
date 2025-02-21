@@ -1,10 +1,62 @@
-:root {
-
-}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --primary: #3E363F;
+  --secondary: #E6AF2E;
+  --accent-1: #B1EDE8;
+  --accent-2: #307473;
+  --accent-3: #2274A5;
+  --width: 100vw;
+  /* colors for svg */
+  --svg-primary: invert(19%) sepia(2%) saturate(3956%) hue-rotate(246deg) brightness(92%) contrast(85%);
+  --svg-accent-2: invert(36%) sepia(6%) saturate(3647%) hue-rotate(130deg) brightness(101%) contrast(80%);
+}
+
+/* Elements */
+
+body {
+  font-family: "Manjari", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+header, footer {
+  background-color: var(--primary);
+  color: var(--accent-1);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+section {
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.show {
+  display: flex;
+}
+
 
