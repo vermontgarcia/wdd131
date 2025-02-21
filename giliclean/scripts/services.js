@@ -5,7 +5,7 @@ const servicesSection = document.getElementById("services");
 
 console.log(servicesSection);
 
-services.slice(3).forEach(({ name, description }) => {
+services.slice(0, 3).forEach(({ name, description }) => {
   // Create Services Cards and add them to the DOM
   const cardDiv = document.createElement("div");
   const cardH3 = document.createElement("h3");

@@ -1,11 +1,11 @@
 import { reviews, inputStartAttributes } from "./content.js";
 
 // DOM Selectors Home Page
-const servicesSection = document.getElementById("reviews");
+const reviewsSection = document.getElementById("reviews");
 
-console.log(servicesSection);
+console.log(reviewsSection);
 
-reviews.slice(3).forEach(({ user, imgUrl, date, stars, review }) => {
+reviews.slice(0, 3).forEach(({ user, imgUrl, date, stars, review }) => {
   // Create Review Cards and add them to the DOM
   const cardDiv = document.createElement("div");
 
@@ -45,7 +45,7 @@ reviews.slice(3).forEach(({ user, imgUrl, date, stars, review }) => {
     starsDiv.appendChild(starInput);
   });
 
-  servicesSection.appendChild(cardDiv);
+  reviewsSection.appendChild(cardDiv);
 });
 
 export default { reviews, inputStartAttributes };

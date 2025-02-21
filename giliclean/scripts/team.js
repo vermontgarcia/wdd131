@@ -3,7 +3,7 @@ import { teamMembers } from "./content.js";
 // DOM Selectors Home Page
 const joinOurTeamSection = document.getElementById("join-our-team");
 
-teamMembers.slice(3).forEach(({ imgUrl, name, captions, more }) => {
+teamMembers.slice(0, 3).forEach(({ imgUrl, name, captions, more }) => {
   // Create teamMembers Cards and add them to the DOM
   const cardDiv = document.createElement("div");
   const teamMemberPicture = document.createElement("img");
