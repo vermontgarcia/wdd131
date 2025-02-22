@@ -203,27 +203,28 @@ export const teamMembers = [
 export const aboutUsSpeach = {
   title: "About Us",
   content: [
-    "At <string>Gili Clean</strong>, we believe that a clean environment is key to a happy, healthy life. Our company was founded with the simple yet powerful mission of providing top-notch cleaning services that not only transform homes and offices but also give our clients the gift of time. We understand that life is busy, and we’re here to ensure that cleaning doesn’t add to the stress—it’s our job to handle the mess, so you can focus on what matters most.",
+    "At <strong>Gili Clean</strong>, we believe that a clean environment is key to a happy, healthy life. Our company was founded with the simple yet powerful mission of providing top-notch cleaning services that not only transform homes and offices but also give our clients the gift of time. We understand that life is busy, and we’re here to ensure that cleaning doesn’t add to the stress—it’s our job to handle the mess, so you can focus on what matters most.",
+    '<span>Our Motto</span> <strong>"Gili Clean – More Time for You, A Cleaner Home for Life."</strong>',
   ],
 };
 
 export const ourStorySpeach = {
   title: "Our Story",
   content: [
-    "Gili Clean was born out of a passion for cleanliness and a desire to help others live and work in spaces that foster well-being and productivity. What began as a small, family-run business has grown into a trusted name in the cleaning industry, known for our attention to detail and commitment to customer satisfaction.",
+    "<strong>Gili Clean</strong> was born out of a passion for cleanliness and a desire to help others live and work in spaces that foster well-being and productivity. What began as a small, family-run business has grown into a trusted name in the cleaning industry, known for our attention to detail and commitment to customer satisfaction.",
     "From our humble beginnings, we quickly realized that providing top-tier cleaning solutions wasn’t just about scrubbing floors and dusting shelves. It was about offering our clients peace of mind, knowing they could rely on us to create spaces that are not only sparkling clean but also conducive to their personal and professional growth.",
-    "Every time we finish a cleaning, we know we’ve made a difference—and that keeps us motivated every day.",
+    "Every time we finish a cleaning, we know we’ve made a difference — and that keeps us motivated every day.",
   ],
 };
 
 export const ourMissionSpeach = {
   title: "About Us",
   content: [
-    "At Gili Clean, our mission is simple: To make every home and office we clean a place where people can thrive. By providing top-quality cleaning services, we give our clients the time and space they need to focus on their personal goals, family, and work. We’re not just cleaning spaces; we’re creating environments where people can relax, feel inspired, and succeed.",
+    "At <strong>Gili Clean</strong>, our mission is simple: To make every home and office we clean a place where people can thrive. By providing top-quality cleaning services, we give our clients the time and space they need to focus on their personal goals, family, and work. We’re not just cleaning spaces; we’re creating environments where people can relax, feel inspired, and succeed.",
   ],
 };
 
-export const ourValues = {
+export const ourValuesSpeach = {
   title: "Our Values",
   content: [
     "<strong>Customer Satisfaction:</strong>Our clients are at the heart of everything we do. We take pride in consistently exceeding expectations, and our goal is always to leave your space feeling fresh, clean, and rejuvenating.",
@@ -233,12 +234,12 @@ export const ourValues = {
   ],
 };
 
-export const whyChooseUs = {
+export const whyChooseUsSpeach = {
   title: "Why Choose Gili Clean?",
   content: [
-    "<strong>Experienced Team:</strong>Our team is made up of skilled professionals who take pride in their work. We’re not just cleaners; we’re perfectionists who care about the details.",
-    "<strong>Flexible Services:</strong>Whether you need a one-time deep cleaning or regular maintenance, we offer flexible cleaning solutions that fit your schedule and needs.",
-    "<strong>Customer-Centered Approach:</strong>Your satisfaction is our top priority. We listen to your needs and customize our services to ensure that your expectations are met—and exceeded.",
-    "<strong>Affordable & Transparent Pricing:</strong>We believe in honesty and transparency. Our pricing is straightforward, and there are no hidden fees. You get the best value for your investment.",
+    "<strong>Experienced Team:</strong> Our team is made up of skilled professionals who take pride in their work. We’re not just cleaners; we’re perfectionists who care about the details.",
+    "<strong>Flexible Services:</strong> Whether you need a one-time deep cleaning or regular maintenance, we offer flexible cleaning solutions that fit your schedule and needs.",
+    "<strong>Customer-Centered Approach:</strong> Your satisfaction is our top priority. We listen to your needs and customize our services to ensure that your expectations are met—and exceeded.",
+    "<strong>Affordable & Transparent Pricing:</strong> We believe in honesty and transparency. Our pricing is straightforward, and there are no hidden fees. You get the best value for your investment.",
   ],
 };
