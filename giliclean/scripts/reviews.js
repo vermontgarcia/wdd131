@@ -51,7 +51,6 @@ if (reviewsSection) {
         starLabel.setAttribute("for", `${uIndex}-${id}`);
 
         if (index === stars - 1) {
-          // Selected
           starInput.setAttribute("checked", "checked");
         }
         starsDiv.prepend(starLabel);

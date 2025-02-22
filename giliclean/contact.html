@@ -47,10 +47,10 @@
      <form id="contact-form" method="post" action="index.html" class="contact-form">
       <fieldset>
         <label>Your Name<span class="required">*</span>
-          <input type="text" name="name" id="name" required>
+          <input type="text" name="name" id="name" required autocomplete>
         </label>
         <label>Your Email<span class="required">*</span>
-          <input type="text" name="email" id="email" required>
+          <input type="text" name="email" id="email" required autocomplete>
         </label>
       </fieldset>
       <fieldset>
@@ -79,7 +79,7 @@
         </div>
       </fieldset>
       <fieldset>
-        <input type="submit" role="button" class="button" value="Get My Response">
+        <input id="submit-btn" type="submit" role="button" class="button" value="Send My Message">
       </fieldset>
      </form>
   </main>

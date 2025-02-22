@@ -48,20 +48,41 @@ document.querySelectorAll('input[name="topic"]').forEach((radio) => {
       document
         .querySelectorAll(".star-radio")[0]
         .setAttribute("required", "required");
+      document
+        .getElementById("submit-btn")
+        .setAttribute(
+          "value",
+          `Publish My ${topic.charAt(0).toUpperCase() + topic.slice(1)}`
+        );
     } else {
       document.getElementById("stars-reviews").classList.add("hidden");
       document.querySelectorAll(".star-radio")[0].removeAttribute("required");
+      document
+        .getElementById("submit-btn")
+        .setAttribute(
+          "value",
+          `Request My ${topic.charAt(0).toUpperCase() + topic.slice(1)}`
+        );
     }
   });
 });
 
 document
   .querySelector("#contact-form")
-  .addEventListener("submit", function (event) {
+  ?.addEventListener("submit", function (event) {
     event.preventDefault();
     const formData = new FormData(this);
 
+    console.log(formData);
+
+    let data = {};
+
     for (const [name, value] of formData.entries()) {
-      console.log(`${name}: ${value}`); // Logs field name and value
+      data[name] = value;
     }
+    console.log(data);
+    const requets = JSON.parse(localStorage.getItem("requets")) || [];
+    data.timeStamp = Date.now();
+    requets.push(data);
+    localStorage.setItem("requets", JSON.stringify(requets));
   });
