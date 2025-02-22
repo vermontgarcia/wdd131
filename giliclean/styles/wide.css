@@ -30,7 +30,12 @@
   /* Services */
 
   #services .card {
-    width: 33%;
+    width: 100%;
+  }
+
+  #services-all .cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   /* Service Area */
