@@ -20,6 +20,8 @@
   --soft-grey: #E0E0E0;
   /* Reviews */
   --stars: rgb(255, 165, 0);
+  /* Form */
+  --required-asterisc: #990000;
   /* Font Sizes */
   --headding: 40px;
   --sub-headding: 35px;
@@ -165,8 +167,6 @@ section:nth-child(odd) {
 }
 
 .card {
-  /* width: 27%; */
-  /* width: 100%; */
   background-color: var(--white);
   padding: 1rem;
   border-radius: 5px;

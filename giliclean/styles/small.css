@@ -175,11 +175,11 @@ section .cards-container {
   position: relative;
 }
 
-input[type="radio"] {
+.stars input[type="radio"] {
   display: none;
 }
 
-input[type="radio"]:required {
+.stars input[type="radio"]:required {
   border: 0;
 }
 
@@ -297,10 +297,6 @@ label {
   font-size: var(--copyrigth-small);
 }
 
-#last-modified {
-  /* font-size: small; */
-}
-
 
 /*********************** About Us Page ***********************/
 
@@ -310,4 +306,142 @@ label {
 
 /*********************** Contact Page ***********************/
 
+/* Form Styling */
+
+.contact-form {
+  padding: 1rem;
+  max-width: 550px;
+  width: 100%;
+  margin: 2rem auto;
+  border-radius: 5px;
+}
+
+.contact-form fieldset {
+  border: none;
+  padding-top: 1rem;
+}
+
+.contact-form label,
+.contact-form div {
+  display: block;
+  color: var(--deep-sea-blue);
+  font-size: 0.9rem;
+  color: var(--form-labels);
+  font-weight: 600;
+  padding: 0.5rem 0;
+}
+
+.contact-form label:first-child {
+  padding-top: 0;
+}
+
+.contact-form input[type="text"],
+.contact-form select,
+.contact-form textarea
+ {
+  background-color: var(--mercury);
+  display: block;
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.contact-form .topic input[type="radio"] {
+  margin-right: 6px;
+}
+
+.contact-form input[type="submit"] {
+  border: none;
+  background-color: var(--deep-sea-blue);
+  border-radius: 5px;
+  padding: 0.8rem;
+  box-shadow: 1px 1px 4px var(--mercury);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-form select:required,
+.contact-form textarea:required,
+.contact-form input:required{
+  border-right: solid 4px var(--required-asterisc);
+}
+
+.contact-form select:required:valid,
+.contact-form textarea:required:valid,
+.contact-form input:required:valid {
+  border-right: solid 4px green;
+}
+
+.contact-form .required {
+  color: var(--required-asterisc);
+  margin-left: 5px;
+}
+
+.contact-form .optional {
+  color: var(--accent-3);
+  margin-left: 5px;
+  font-size: 0.7rem;
+}
+
+/* .contact-form .stars-form, */
+/* Rating Stars Styles */
+.contact-form .stars-form {
+  display: flex;
+  width: 180px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-top: 5px;
+  position: relative;
+}
+
+.contact-form .stars-form input[type="radio"] {
+  appearance: none;
+  width: 12px;
+}
+
+.contact-form .stars-form input[type="radio"]:required {
+  border: 0;
+}
+
+.contact-form .stars-form > label {
+  width: 2.5rem;
+  height: 0;
+  font-family: Arial;
+  font-size: 2.5rem;
+  transition: 0.2s ease;
+  color: var(--stars);
+}
+
+.contact-form .stars-form label:hover {
+  cursor: pointer;
+  color: var(--sunlight-yellow);
+  transition: 0.2s ease;
+}
+
+.contact-form .stars-form label:active::before {
+  transform:scale(1.1);
+}
+
+.contact-form .stars-form label::before {
+  content: '\2606';
+  position: absolute;
+  top: 0px;
+  line-height: 26px;
+}
+/* set full star shape for checked label and those that come after it */
+.contact-form .stars-form input:checked ~ label:before {
+  content:'\2605';
+}
+
+@-moz-document url-prefix() {
+  .contact-form .stars-form input:checked ~ label:before {
+  font-size: 36px;
+  line-height: 21px;
+  }
+}
+
+.stars-reviews.hidden {
+  display: none;
+}
 

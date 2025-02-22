@@ -36,3 +36,20 @@ hamButton.addEventListener("click", () => {
   headerTitle.classList.toggle("show");
   navigation.classList.toggle("show");
 });
+
+// Contact Form
+
+// const redioReview = document.getElementById("review");
+
+// if (redioReview) {
+//   console.log(redioReview);
+//   redioReview.addEventListener("change", (event) => {
+//     console.log(event.target.checked);
+//   });
+// }
+
+document.querySelectorAll('input[name="topic"]').forEach((radio) => {
+  radio.addEventListener("change", (event) => {
+    console.log(`Radio selected: ${event.target.value}`);
+  });
+});
