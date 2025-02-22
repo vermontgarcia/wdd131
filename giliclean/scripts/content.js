@@ -36,7 +36,7 @@ export const reviews = [
     id: "100",
     user: "Alice Johnson",
     // imgUrl: "https://example.com/images/alice.jpg",
-    imgUrl: "images/alice.webp",
+    imgUrl: "images/avatar.webp",
     date: "2025-02-20",
     stars: 5,
     review:
@@ -46,7 +46,7 @@ export const reviews = [
     id: "100",
     user: "John Doe",
     // imgUrl: "https://example.com/images/john.jpg",
-    imgUrl: "images/alice.webp",
+    imgUrl: "images/avatar.webp",
     date: "2025-02-19",
     stars: 4,
     review:
@@ -56,7 +56,7 @@ export const reviews = [
     id: "100",
     user: "Sarah Lee",
     // imgUrl: "https://example.com/images/sarah.jpg",
-    imgUrl: "images/alice.webp",
+    imgUrl: "images/avatar.webp",
     date: "2025-02-18",
     stars: 5,
     review:
@@ -66,7 +66,7 @@ export const reviews = [
     id: "100",
     user: "Mark Smith",
     // imgUrl: "https://example.com/images/mark.jpg",
-    imgUrl: "images/alice.webp",
+    imgUrl: "images/avatar.webp",
     date: "2025-02-17",
     stars: 5,
     review:
@@ -76,7 +76,7 @@ export const reviews = [
     id: "100",
     user: "Emily Davis",
     // imgUrl: "https://example.com/images/emily.jpg",
-    imgUrl: "images/alice.webp",
+    imgUrl: "images/avatar.webp",
     date: "2025-02-16",
     stars: 4,
     review:
@@ -86,7 +86,7 @@ export const reviews = [
     id: "100",
     user: "Chris Brown",
     // imgUrl: "https://example.com/images/chris.jpg",
-    imgUrl: "images/alice.webp",
+    imgUrl: "images/avatar.webp",
     date: "2025-02-15",
     stars: 5,
     review:
@@ -96,7 +96,7 @@ export const reviews = [
     id: "100",
     user: "Jessica Taylor",
     // imgUrl: "https://example.com/images/jessica.jpg",
-    imgUrl: "images/alice.webp",
+    imgUrl: "images/avatar.webp",
     date: "2025-02-14",
     stars: 5,
     review:
@@ -106,7 +106,7 @@ export const reviews = [
     id: "100",
     user: "David Williams",
     // imgUrl: "https://example.com/images/david.jpg",
-    imgUrl: "images/alice.webp",
+    imgUrl: "images/avatar.webp",
     date: "2025-02-13",
     stars: 4,
     review:
@@ -116,7 +116,7 @@ export const reviews = [
     id: "100",
     user: "Laura Martinez",
     // imgUrl: "https://example.com/images/laura.jpg",
-    imgUrl: "images/alice.webp",
+    imgUrl: "images/avatar.webp",
     date: "2025-02-12",
     stars: 5,
     review:
@@ -126,7 +126,7 @@ export const reviews = [
     id: "100",
     user: "Robert Wilson",
     // imgUrl: "https://example.com/images/robert.jpg",
-    imgUrl: "images/alice.webp",
+    imgUrl: "images/avatar.webp",
     date: "2025-02-11",
     stars: 5,
     review:
@@ -169,19 +169,19 @@ export const inputStartAttributes = [
 
 export const teamMembers = [
   {
-    imgUrl: "https://example.com/images/team1.jpg",
+    imgUrl: "images/team-1.webp",
     name: "John Doe",
     captions: "CEO & Founder",
     more: "I’m proud to lead a team that brings cleanliness and comfort to so many people. Watching our clients’ satisfaction fuels my passion for this work.",
   },
   {
-    imgUrl: "https://example.com/images/team2.jpg",
+    imgUrl: "images/team-2.webp",
     name: "Jane Smith",
     captions: "Lead Cleaner",
     more: "Every day I get to make a difference in someone’s home. The smiles from our clients when they see the results keep me motivated and fulfilled.",
   },
   {
-    imgUrl: "https://example.com/images/team3.jpg",
+    imgUrl: "images/team-3.webp",
     name: "Mike Johnson",
     captions: "Project Manager",
     more: "I love organizing and overseeing the work that makes homes shine. It’s great to be part of a company that values attention to detail and customer satisfaction.",

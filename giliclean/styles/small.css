@@ -134,7 +134,7 @@ section .cards-container {
   margin-top: 2rem;
 }
 
-section .cards-container img {
+#reviews .cards-container img {
   border-radius: 50%;
 }
 
@@ -233,6 +233,23 @@ label {
 
 
 /* Join Our Team Section */
+
+.card-flat {
+  /* width: 90%; */
+  border: 1px solid var(--soft-grey);
+  border-radius: 5px;
+  margin: 1rem ;
+}
+
+.card-flat img {
+  width: 100%;
+}
+
+.card-flat div {
+  padding: 1rem;
+}
+
+
 
 
 /*********************** About Us Page ***********************/
