@@ -199,4 +199,7 @@ section:nth-child(odd) {
   box-shadow: 0 4px 8px 0;
 }
 
+p {
+  margin-top: 1rem;
+}
 
