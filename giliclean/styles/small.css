@@ -1,3 +1,26 @@
+:root {
+  /* Variables Declaration */
+  --text-color: #000000; 
+  /* Primary Colors */
+  --deep-sea-blue: #03587B;
+  --fountain-blue: #5BB4C3;
+  --mercury: #E2E8EB;
+  --white: #FFFFFF;
+  /* Secondary Colors */
+  --aqua-green: #6FCF97;
+  --sky-blue: #56CCF2;
+  --sunlight-yellow: #F2C94C;
+  --soft-grey: #E0E0E0;
+
+  --headding: 40px;
+  --sub-headding: 35px;
+  --title: 24px;
+  --label: 18px;
+  --body: 14px;
+  --button: 18px;
+  --copyrigth: 10px;
+  --copyrigth-small: 10px;
+}
 /* Header */
 
 .header-title {
@@ -42,8 +65,8 @@
 /* Menu */
 
 #menu-large a:hover {
-  background-color: var(--accent-1);
-  color: var(--primary);
+  background-color: var(--mercury);
+  color: var(--deep-sea-blue);
 }
 
 #menu.show::before {
@@ -104,6 +127,12 @@
 
 /* Services Section */
 
+section .cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
 
 /* Reviews Section */
 

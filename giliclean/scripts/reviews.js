@@ -1,7 +1,7 @@
 import { reviews, inputStartAttributes } from "./content.js";
 
 // DOM Selectors Home Page
-const reviewsSection = document.getElementById("reviews");
+const reviewsSection = document.querySelector("#reviews .container");
 
 if (reviewsSection) {
   reviews.slice(0, 3).forEach(({ user, imgUrl, date, stars, review }) => {
