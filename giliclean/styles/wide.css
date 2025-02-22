@@ -33,4 +33,21 @@
     width: 33%;
   }
 
+  /* Service Area */
+  #service-area .container .wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+
+  #service-area .container .wrapper div {
+    margin: 1rem;
+    width: 50%;
+  }
+  
+  #service-area .container > div > div > iframe {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
 }

@@ -206,6 +206,31 @@ label {
 
 /* Service Area Section */
 
+#service-area .container .wrapper div {
+  margin: 1rem;
+}
+
+#service-area .container .wrapper div:first-child {
+  border: 1px solid var(--soft-grey);
+  padding: 1rem;
+}
+
+#service-area .container h3 {
+  margin: 1rem;
+  text-align: center;
+}
+
+#service-area .container li {
+  font-size: var(--label);
+  text-align: center;
+}
+
+#service-area .container > div > div > iframe {
+  width: 100%;
+  padding: 0;
+  border: unset;
+}
+
 
 /* Join Our Team Section */
 
