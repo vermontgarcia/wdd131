@@ -125,6 +125,13 @@
 
 /*********************** Home Page ***********************/
 
+/* Header */
+
+#header-title img {
+  width: 200px;
+  height: auto;
+}
+
 /* Hero */
 
 .hero picture img {
