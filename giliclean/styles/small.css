@@ -18,8 +18,8 @@
   --label: 18px;
   --body: 14px;
   --button: 18px;
-  --copyrigth: 10px;
-  --copyrigth-small: 10px;
+  --copyrigth: 12px;
+  --copyrigth-small: 8px;
   --ham-menu: 60px;
   --ham-menu-show: 40px;
 }
@@ -266,6 +266,40 @@ label {
 }
 
 
+/* Footer */
+
+.footer .links {
+  font-size: var(--body);
+  margin-bottom: 1rem;
+}
+
+.footer .links a {
+  padding: 0 1rem;
+  border-right: 1px solid var(--mercury);
+}
+
+.footer .links a:last-child {
+  border: unset;
+}
+
+.footer img {
+  margin-top: 1rem;
+  width: 80px;
+  height: auto;
+}
+
+.copyright {
+  font-size: var(--copyrigth);
+}
+
+.copyright-small {
+  margin-top: 0.5rem;
+  font-size: var(--copyrigth-small);
+}
+
+#last-modified {
+  /* font-size: small; */
+}
 
 
 /*********************** About Us Page ***********************/
@@ -277,17 +311,3 @@ label {
 /*********************** Contact Page ***********************/
 
 
-/* Footer */
-
-/* .footer {
-  padding: 1rem;
-  text-align: center;
-}
-
-.copyright {
-  font-size: large;
-}
-
-#last-modified {
-  font-size: small;
-} */
