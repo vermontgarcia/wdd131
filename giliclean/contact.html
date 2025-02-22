@@ -44,7 +44,7 @@
       </picture>
     </div>
      <h1>Send Us A Message!</h1>
-     <form method="get" action="index.html" class="contact-form">
+     <form id="contact-form" method="post" action="index.html" class="contact-form">
       <fieldset>
         <label>Your Name<span class="required">*</span>
           <input type="text" name="name" id="name" required>
@@ -60,7 +60,7 @@
           <label><input type="radio" name="topic" id="booking" value="booking" required>Booking</label>
           <label><input type="radio" name="topic" id="review" value="review" required>Review</label>
         </div>
-        <div class="stars-reviews hidden">
+        <div id="stars-reviews" class="stars-reviews hidden">
           <div>Overall Rating<span class="required">*</span></div>
           <div class="stars-form">
             <input class="star-radio" type="radio" id="fivestar" name="stars" value="5"><label for="fivestar"></label>

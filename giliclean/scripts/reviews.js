@@ -42,7 +42,7 @@ if (reviewsSection) {
 
       inputStartAttributes.forEach(({ type, id, name, value }, index) => {
         const starInput = document.createElement("input");
-        starInput.setAttribute("disabled", true);
+        starInput.setAttribute("disabled", "disabled");
         starInput.setAttribute("type", type);
         starInput.setAttribute("id", `${uIndex}-${id}`);
         starInput.setAttribute("name", `${uIndex}-${name}`);
@@ -52,7 +52,7 @@ if (reviewsSection) {
 
         if (index === stars - 1) {
           // Selected
-          starInput.setAttribute("checked", true);
+          starInput.setAttribute("checked", "checked");
         }
         starsDiv.prepend(starLabel);
         starsDiv.prepend(starInput);

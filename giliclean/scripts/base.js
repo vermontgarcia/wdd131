@@ -39,17 +39,29 @@ hamButton.addEventListener("click", () => {
 
 // Contact Form
 
-// const redioReview = document.getElementById("review");
-
-// if (redioReview) {
-//   console.log(redioReview);
-//   redioReview.addEventListener("change", (event) => {
-//     console.log(event.target.checked);
-//   });
-// }
-
 document.querySelectorAll('input[name="topic"]').forEach((radio) => {
   radio.addEventListener("change", (event) => {
     console.log(`Radio selected: ${event.target.value}`);
+    const topic = event.target.value;
+    if (topic === "review") {
+      document.getElementById("stars-reviews").classList.remove("hidden");
+      document
+        .querySelectorAll(".star-radio")[0]
+        .setAttribute("required", "required");
+    } else {
+      document.getElementById("stars-reviews").classList.add("hidden");
+      document.querySelectorAll(".star-radio")[0].removeAttribute("required");
+    }
   });
 });
+
+document
+  .querySelector("#contact-form")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+    const formData = new FormData(this);
+
+    for (const [name, value] of formData.entries()) {
+      console.log(`${name}: ${value}`); // Logs field name and value
+    }
+  });
