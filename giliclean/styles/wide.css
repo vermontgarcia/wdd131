@@ -22,4 +22,15 @@
   #ham-menu {
 		display: none;
 	}
+
+  section .cards-container {
+    flex-direction: row;
+  }
+
+  /* Services */
+
+  #services .card {
+    width: 33%;
+  }
+
 }

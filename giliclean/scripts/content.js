@@ -33,80 +33,100 @@ export const services = [
 
 export const reviews = [
   {
+    id: "100",
     user: "Alice Johnson",
-    imgUrl: "https://example.com/images/alice.jpg",
+    // imgUrl: "https://example.com/images/alice.jpg",
+    imgUrl: "images/alice.webp",
     date: "2025-02-20",
     stars: 5,
     review:
       "Absolutely fantastic service! The team was on time, friendly, and did an incredible job cleaning my home. Highly recommend!",
   },
   {
+    id: "100",
     user: "John Doe",
-    imgUrl: "https://example.com/images/john.jpg",
+    // imgUrl: "https://example.com/images/john.jpg",
+    imgUrl: "images/alice.webp",
     date: "2025-02-19",
     stars: 4,
     review:
       "Great service overall, though there were a couple of spots that needed a second pass. Still, very pleased with the result!",
   },
   {
+    id: "100",
     user: "Sarah Lee",
-    imgUrl: "https://example.com/images/sarah.jpg",
+    // imgUrl: "https://example.com/images/sarah.jpg",
+    imgUrl: "images/alice.webp",
     date: "2025-02-18",
     stars: 5,
     review:
       "My house has never looked better! The cleaners were thorough, professional, and quick. Will definitely book again!",
   },
   {
+    id: "100",
     user: "Mark Smith",
-    imgUrl: "https://example.com/images/mark.jpg",
+    // imgUrl: "https://example.com/images/mark.jpg",
+    imgUrl: "images/alice.webp",
     date: "2025-02-17",
     stars: 5,
     review:
       "Top-notch service! They took care of everything, and I could finally relax in a spotless home. Worth every penny.",
   },
   {
+    id: "100",
     user: "Emily Davis",
-    imgUrl: "https://example.com/images/emily.jpg",
+    // imgUrl: "https://example.com/images/emily.jpg",
+    imgUrl: "images/alice.webp",
     date: "2025-02-16",
     stars: 4,
     review:
       "The team did a good job, but I think they missed a few details. Still, my home feels much cleaner and fresher.",
   },
   {
+    id: "100",
     user: "Chris Brown",
-    imgUrl: "https://example.com/images/chris.jpg",
+    // imgUrl: "https://example.com/images/chris.jpg",
+    imgUrl: "images/alice.webp",
     date: "2025-02-15",
     stars: 5,
     review:
       "Fantastic cleaning service! They arrived on time, and everything was spotless when they finished. Highly recommend for anyone who needs a deep clean.",
   },
   {
+    id: "100",
     user: "Jessica Taylor",
-    imgUrl: "https://example.com/images/jessica.jpg",
+    // imgUrl: "https://example.com/images/jessica.jpg",
+    imgUrl: "images/alice.webp",
     date: "2025-02-14",
     stars: 5,
     review:
       "The team was super friendly and efficient. My kitchen has never been this clean! I will definitely be using their services again.",
   },
   {
+    id: "100",
     user: "David Williams",
-    imgUrl: "https://example.com/images/david.jpg",
+    // imgUrl: "https://example.com/images/david.jpg",
+    imgUrl: "images/alice.webp",
     date: "2025-02-13",
     stars: 4,
     review:
       "Overall, good service, but they took a little longer than expected. Still, the quality of work was excellent.",
   },
   {
+    id: "100",
     user: "Laura Martinez",
-    imgUrl: "https://example.com/images/laura.jpg",
+    // imgUrl: "https://example.com/images/laura.jpg",
+    imgUrl: "images/alice.webp",
     date: "2025-02-12",
     stars: 5,
     review:
       "Could not be happier! My house looks amazing, and the team was super professional. They even took the time to clean areas I didn’t expect.",
   },
   {
+    id: "100",
     user: "Robert Wilson",
-    imgUrl: "https://example.com/images/robert.jpg",
+    // imgUrl: "https://example.com/images/robert.jpg",
+    imgUrl: "images/alice.webp",
     date: "2025-02-11",
     stars: 5,
     review:

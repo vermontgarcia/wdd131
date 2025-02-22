@@ -18,7 +18,9 @@
   --sky-blue: #56CCF2;
   --sunlight-yellow: #F2C94C;
   --soft-grey: #E0E0E0;
-
+  /* Reviews */
+  --stars: rgb(255, 165, 0);
+  /* Font Sizes */
   --headding: 40px;
   --sub-headding: 35px;
   --title: 24px;
@@ -135,7 +137,7 @@ section {
 }
 
 section .container {
-  padding: 1rem;
+  padding: 2rem;
   max-width: 1200px;
   margin: auto;
   display: flex;
@@ -168,11 +170,32 @@ section:nth-child(odd) {
 }
 
 .card {
-  width: 27%;
+  /* width: 27%; */
+  /* width: 100%; */
   background-color: var(--white);
   padding: 1rem;
   border-radius: 5px;
-  border: solid 1px transparent;
+  border: solid 1px var(--mercury);
+  margin: 1rem;
+}
+
+.card p {
+  margin-top: 0.5rem;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-header div {
+  margin-left: 0.5rem;
+}
+
+.card-stars {
+  background-color: #03587B;
+  margin-top: 0.5rem;
 }
 
 .card:hover {
