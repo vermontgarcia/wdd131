@@ -20,6 +20,8 @@
   --button: 18px;
   --copyrigth: 10px;
   --copyrigth-small: 10px;
+  --ham-menu: 60px;
+  --ham-menu-show: 40px;
 }
 /* Header */
 
@@ -82,15 +84,15 @@
 
 #menu::before {
   content: "≡";
-  color: var(--accent-1);
+  color: var(--mercury);
 }
 
 #menu:hover:before {
-  color: var(--primary);
+  color: var(--deep-sea-blue);
 }
 
 #ham-menu {
-  font-size: var(--title);
+  font-size: var(--ham-menu);
   width: 4rem;
   height: 70%;
   display: flex;
@@ -100,9 +102,13 @@
   margin-right: 1rem;
 }
 
+#ham-menu.show {
+  font-size: var(--ham-menu-show);
+}
+
 #ham-menu:hover {
-  color: var(--primary);
-  background-color: var(--accent-1);
+  color: var(--deep-sea-blue);
+  background-color: var(--mercury);
   cursor: pointer;
 }
 
@@ -121,6 +127,9 @@
 
 /* Hero */
 
+.hero picture img {
+  width: 100%;
+}
 
 /* Main Section */
 
