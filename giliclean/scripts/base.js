@@ -72,17 +72,15 @@ document
   ?.addEventListener("submit", function (event) {
     event.preventDefault();
     const formData = new FormData(this);
-
-    console.log(formData);
-
     let data = {};
-
     for (const [name, value] of formData.entries()) {
       data[name] = value;
     }
-    console.log(data);
     const requets = JSON.parse(localStorage.getItem("requets")) || [];
     data.timeStamp = Date.now();
     requets.push(data);
     localStorage.setItem("requets", JSON.stringify(requets));
+    setTimeout(() => {
+      window.location.href = "index.html";
+    }, 2000);
   });
