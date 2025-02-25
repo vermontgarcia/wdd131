@@ -103,6 +103,7 @@
 /* Header */
 
 #header-title img {
+  margin-top: 1rem;
   width: 200px;
   height: auto;
 }
