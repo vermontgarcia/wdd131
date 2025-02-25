@@ -1,28 +1,3 @@
-:root {
-  /* Variables Declaration */
-  --text-color: #000000; 
-  /* Primary Colors */
-  --deep-sea-blue: #03587B;
-  --fountain-blue: #5BB4C3;
-  --mercury: #E2E8EB;
-  --white: #FFFFFF;
-  /* Secondary Colors */
-  --aqua-green: #6FCF97;
-  --sky-blue: #56CCF2;
-  --sunlight-yellow: #F2C94C;
-  --soft-grey: #E0E0E0;
-
-  --headding: 40px;
-  --sub-headding: 35px;
-  --title: 24px;
-  --label: 18px;
-  --body: 14px;
-  --button: 18px;
-  --copyrigth: 12px;
-  --copyrigth-small: 8px;
-  --ham-menu: 60px;
-  --ham-menu-show: 40px;
-}
 /* Header */
 
 .header-title {
@@ -136,6 +111,7 @@
 
 .hero picture img {
   width: 100%;
+  height: auto;
 }
 
 /* Main Section */
