@@ -84,7 +84,7 @@ a {
 }
 
 a:visited {
-  color: unset;
+  color: var(--mercury);
 }
 
 li {
